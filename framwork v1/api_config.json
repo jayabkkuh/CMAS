@@ -1,0 +1,53 @@
+{
+  "models": [
+    {
+      "config_name": "gpt-5",
+      "model_type": "openai_chat",
+      "model_name": "gpt-5",
+      "api_key": "",
+      "api_url": "https://api.qingyuntop.top/v1",
+      "headers": {
+        "OpenAI-Beta": "assistants=v2"
+      },
+      "timeout": 120
+    }
+  ],
+  "agents": {
+    "Detective": {
+      "model_config": "gpt-5"
+    },
+    "Strategist": {
+      "model_config": "gpt-5"
+    },
+    "General": {
+      "model_config": "gpt-5"
+    },
+    "Validator": {
+      "model_config": "gpt-5"
+    },
+    "Installer": {
+      "model_config": "gpt-5"
+    },
+    "ReverseExecutorAgent": {
+      "model_config": "gpt-5"
+    },
+    "PwnExecutorAgent": {
+      "model_config": "gpt-5"
+    },
+    "CryptoExecutorAgent": {
+      "model_config": "gpt-5"
+    },
+    "ForensicsExecutorAgent": {
+      "model_config": "gpt-5"
+    },
+    "MiscExecutorAgent": {
+      "model_config": "gpt-5"
+    },
+    "WebExecutorAgent": {
+      "model_config": "gpt-5"
+    },
+    "SymExecExecutorAgent": {
+      "model_config": "gpt-5"
+    }
+  }
+}
