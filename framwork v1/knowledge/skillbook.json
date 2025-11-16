@@ -1,0 +1,128 @@
+[
+  {
+    "category": "Forensics",
+    "pattern": "DOCX description contains flag format hint",
+    "takeaway": "Extract word/document.xml from DOCX to capture embedded hints, then feed clues to planning stage.",
+    "tools": [
+      "zip",
+      "xmllint",
+      "python-docx"
+    ],
+    "role": "",
+    "updated_at": "2025-10-25T04:36:44.623131",
+    "uses": 0
+  },
+  {
+    "category": "Reverse",
+    "pattern": "Mission jumpjump: Validator lessons",
+    "takeaway": "[Mock response for Validator] You are the Validator reviewing an agent's performance.\nAgent: Validator\nMetrics: commands=0, evidence=0, verified=0, tools=.\nWrite a concise, actionable learning takeaway (1-2 sentences) this agent should remember next time.",
+    "tools": [],
+    "role": "Validator",
+    "updated_at": "2025-10-25T04:36:52.266903",
+    "uses": 0
+  },
+  {
+    "category": "Reverse",
+    "pattern": "Mission jumpjump: ExecutorHub lessons",
+    "takeaway": "[Mock response for Validator] You are the Validator reviewing an agent's performance.\nAgent: ExecutorHub\nMetrics: commands=0, evidence=0, verified=0, tools=.\nWrite a concise, actionable learning takeaway (1-2 sentences) this agent should remember next time.",
+    "tools": [],
+    "role": "ExecutorHub",
+    "updated_at": "2025-10-25T04:36:44.623308",
+    "uses": 0
+  },
+  {
+    "category": "Reverse",
+    "pattern": "Mission jumpjump: ReverseExecutorAgent lessons",
+    "takeaway": "[Mock response for Validator] You are the Validator reviewing an agent's performance.\nAgent: ReverseExecutorAgent\nMetrics: commands=12, evidence=15, verified=0, tools=LLM, r2, rabin2, strings.\nWrite a concise, actionable learning takeaway (1-2 sentences) this agent should remember next time.",
+    "tools": [
+      "LLM",
+      "r2",
+      "rabin2",
+      "strings"
+    ],
+    "role": "ReverseExecutorAgent",
+    "updated_at": "2025-10-25T04:36:52.266800",
+    "uses": 15
+  },
+  {
+    "category": "Reverse",
+    "pattern": "Mission jumpjump: General lessons",
+    "takeaway": "[Mock response for Validator] You are the Validator reviewing an agent's performance.\nAgent: General\nMetrics: commands=0, evidence=0, verified=0, tools=.\nWrite a concise, actionable learning takeaway (1-2 sentences) this agent should remember next time.",
+    "tools": [],
+    "role": "General",
+    "updated_at": "2025-10-25T04:36:52.266700",
+    "uses": 0
+  },
+  {
+    "category": "Reverse",
+    "pattern": "Mission jumpjump: Strategist lessons",
+    "takeaway": "[Mock response for Validator] You are the Validator reviewing an agent's performance.\nAgent: Strategist\nMetrics: commands=0, evidence=0, verified=0, tools=.\nWrite a concise, actionable learning takeaway (1-2 sentences) this agent should remember next time.",
+    "tools": [],
+    "role": "Strategist",
+    "updated_at": "2025-10-25T04:36:52.266599",
+    "uses": 15
+  },
+  {
+    "category": "Reverse",
+    "pattern": "Mission jumpjump: Detective lessons",
+    "takeaway": "[Mock response for Validator] You are the Validator reviewing an agent's performance.\nAgent: Detective\nMetrics: commands=9, evidence=10, verified=2, tools=binwalk, file, r2agf, r2info, r2main, r2xrefs, rabin2, rabin2z, strings, zip.\nWrite a concise, actionable learning takeaway (1-2 sentences) this agent should remember next time.",
+    "tools": [
+      "binwalk",
+      "file",
+      "r2info",
+      "r2main",
+      "rabin2",
+      "rabin2z",
+      "strings",
+      "zip",
+      "r2agf",
+      "r2xrefs"
+    ],
+    "role": "Detective",
+    "updated_at": "2025-10-25T04:36:52.266493",
+    "uses": 0
+  },
+  {
+    "category": "Reverse",
+    "pattern": "Mission jumpjump: MissionController lessons",
+    "takeaway": "[Mock response for Validator] You are the Validator reviewing an agent's performance.\nAgent: MissionController\nMetrics: commands=0, evidence=0, verified=0, tools=.\nWrite a concise, actionable learning takeaway (1-2 sentences) this agent should remember next time.",
+    "tools": [],
+    "role": "MissionController",
+    "updated_at": "2025-10-25T04:36:52.266380",
+    "uses": 0
+  },
+  {
+    "category": "Reverse",
+    "pattern": "XOR with constant followed by table comparison",
+    "takeaway": "If binary xors input with constant and compares against numeric table, recover flag by inverting operations.",
+    "tools": [
+      "python",
+      "radare2"
+    ],
+    "role": "",
+    "updated_at": "2025-10-25T04:36:50.614279",
+    "uses": 67
+  },
+  {
+    "category": "Reverse",
+    "pattern": "strings scan",
+    "takeaway": "1a7b AVAUATUSL\n250d ([]A\\A]A^A_\n2520 AWAVAUATUSH\n26f5 []A\\A]A^A_\n3ab4 AWAVAUATUSH\n3d1f 8[]A\\A]A^A_\n3e39 []A\\A]A^A_\n42d8 AWAVAUATI\n44e4 [A\\A]A^A_]\n4d08 AWAVAUATSH\n504b [A\\A]A^A_]\n56",
+    "tools": [
+      "strings"
+    ],
+    "role": "Detective",
+    "updated_at": "2025-10-25T04:36:52.266090",
+    "uses": 0
+  },
+  {
+    "category": "Reverse",
+    "pattern": "DOCX description extracted",
+    "takeaway": "jumpjump (1000b,349.43p,36s) \u63cf\u8ff0 ' goto ' anywhere.  plz  use d3 ctf{ } to wrap the answer before submitting.\u00a0 Flag Format: d3ctf{ this_is_a_sample_flag }",
+    "tools": [
+      "zip"
+    ],
+    "role": "Detective",
+    "updated_at": "2025-10-25T04:36:52.266258",
+    "uses": 0
+  }
+]

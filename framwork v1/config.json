@@ -1,0 +1,110 @@
+{
+  "artifact_root": "artifacts",
+  "logs_root": "logs",
+  "mission_outputs_root": "missions",
+  "skillbook_path": "knowledge/skill.json",
+  "dry_run": false,
+  "default_input": "2/ancient",
+  "detective_commands": {
+    "file": "file {input}",
+    "binwalk": "binwalk --summary {input}",
+    "strings": "strings -t x -n 8 {input} | head -n 200",
+    "r2info": "r2 -2qc 'ij' {input}",
+    "rabin2": "rabin2 -I {input}",
+    "r2main": "r2 -2qc 'aa; s main; pdf' {input}",
+    "rabin2z": "rabin2 -zz {input} | head -n 300",
+    "r2agf": "r2 -2qc 'aa; s main; agf' {input}",
+    "r2xrefs": "r2 -2qc 'aa; axt sym.imp.memcmp; axt sym.imp.strcmp' {input}"
+  },
+  "auto_install_tools": true,
+  "brew_install_allowed": true,
+  "tool_install_map": {
+    "r2": "radare2",
+    "radare2": "radare2",
+    "rabin2": "radare2",
+    "binwalk": "binwalk",
+    "qemu": "qemu",
+    "qemu-system-x86_64": "qemu",
+    "qemu-x86_64": "qemu",
+    "ghidra": "ghidra",
+    "llvm-objdump": "llvm",
+    "llvm-readobj": "llvm"
+  },
+  "tool_install_casks": [
+    "ghidra"
+  ],
+  "auto_install_python_tools": true,
+  "pip_install_allowed": true,
+  "pip_bin": "pip3.11",
+  "python_bin": "python3.11",
+  "python_tool_map": {
+    "pwntools": "pwntools",
+    "pycryptodome": "pycryptodome",
+    "requests": "requests",
+    "volatility": "volatility3",
+    "angr": "angr",
+    "python-docx": "python-docx"
+  },
+  "python_import_map": {
+    "pwntools": "pwn",
+    "pycryptodome": "Crypto",
+    "requests": "requests",
+    "volatility": "volatility3",
+    "angr": "angr",
+    "python-docx": "docx"
+  },
+  "live_console": true,
+  "live_style": "fancy",
+  "live_color": true,
+  "live_lang": "zh",
+  "live_verbosity": "verbose",
+  "auto_live_dialogue_only": false,
+  "live_events": [
+    "round_start",
+    "phase_detective_start",
+    "phase_detective_end",
+    "phase_planning_start",
+    "phase_planning_end",
+    "phase_execution_start",
+    "phase_execution_end",
+    "phase_validation_start",
+    "phase_validation_end",
+    "phase_summary_start",
+    "phase_summary_end",
+    "plan_proposed",
+    "plan_reviewed",
+    "plan_snapshot",
+    "dispatch_plan",
+    "dispatch_start",
+    "dispatch_step",
+    "step_start",
+    "command",
+    "command_live",
+    "evidence",
+    "dialogue",
+    "execution",
+    "stats_update",
+    "route_policy_update",
+    "support_request",
+    "round_complete"
+  ],
+  "live_maxlen": 0,
+  "default_post_run_view": "summary",
+  "enable_angr": true,
+  "dispatch_mode": "bulk"
+  ,
+  "max_rounds": 3
+  ,
+  "terminal_timeout_secs": 600,
+  "watch_events_on_run": false
+  ,
+  "macos_terminal_title_template": "{mission_id} R{round} · {agent}"
+  ,
+  "macos_terminal_title_on_round_only": true
+  ,
+  "macos_terminal_for_all_agents": true
+  ,
+  "include_scoreboard_in_planning": true
+  ,
+  "include_scoreboard_in_summary": true
+}

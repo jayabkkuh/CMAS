@@ -1,0 +1,1020 @@
+{
+  "entries": [
+    {
+      "category": "Forensics",
+      "pattern": "DOCX description contains flag format hint",
+      "takeaway": "Extract word/document.xml from DOCX to capture embedded hints, then feed clues to planning stage.",
+      "tools": [
+        "python-docx",
+        "xmllint",
+        "zip"
+      ],
+      "role": "",
+      "updated_at": "2025-10-28T09:00:58.571610",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x0",
+      "takeaway": "0x00401700 1 47 entry0 0x004029b0 153 4107 fcn.004029b0 0x0040197c 10 240 main",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931964",
+      "uses": 195
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x400000",
+      "takeaway": "1a7b AVAUATUSL 1b1b +A]A^A_ 24f0 D9t$ w 250d ([]A\\A]A^A_ 2520 AWAVAUATUSH 26f5 []A\\A]A^A_ 3171 HygouS 3179 uineuK 3a51 H9\\$(t 3ab4 AWAVAUATUSH 3d1f 8[]A\\A]A^A_ 3e39 []A\\A]A^A_ 42d8",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931963",
+      "uses": 195
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission jumpjump: ExecutorHub lessons",
+      "takeaway": "Ensure each action yields traceable evidence and define acceptance checks up front.",
+      "tools": [],
+      "role": "ExecutorHub",
+      "updated_at": "2025-10-28T09:00:58.572566",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission jumpjump: Validator lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=0, verified=0, commands=0, tools=[]\u3002\u7ecf\u9a8c\uff1a\u4ea7\u51fa\u504f\u5c11\uff0c\u9700\u63d0\u9ad8\u884c\u52a8\u5bc6\u5ea6\u5e76\u786e\u4fdd\u6bcf\u4e00\u6b65\u6709\u53ef\u843d\u76d8\u7684\u8bc1\u636e\u3002",
+      "tools": [
+        "LLM"
+      ],
+      "role": "Validator",
+      "updated_at": "2025-10-28T09:00:58.572541",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission jumpjump: ReverseExecutorAgent lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=121, verified=0, commands=128, tools=[LLM, env, llvm-objdump, llvm-readobj, otool, planning, python, r2, rabin2, strings]\u3002\u7ecf\u9a8c\uff1a\u5df2\u4ea7\u51fa\u8bc1\u636e\u4f46\u95ed\u73af\u4e0d\u8db3\uff0c\u540e\u7eed\u5728\u6bcf\u4e00\u6b65\u524d\u660e\u786e\u5b9a\u4e49\u9a8c\u8bc1\u65b9\u5f0f\u4e0e\u5750\u6807\u3002",
+      "tools": [
+        "LLM",
+        "env",
+        "hex",
+        "llvm-objdump",
+        "llvm-readobj",
+        "otool",
+        "planning",
+        "python"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931962",
+      "uses": 292
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission jumpjump: General lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=3, verified=0, commands=0, tools=[LLM]\u3002\u7ecf\u9a8c\uff1a\u5df2\u4ea7\u51fa\u8bc1\u636e\u4f46\u95ed\u73af\u4e0d\u8db3\uff0c\u540e\u7eed\u5728\u6bcf\u4e00\u6b65\u524d\u660e\u786e\u5b9a\u4e49\u9a8c\u8bc1\u65b9\u5f0f\u4e0e\u5750\u6807\u3002",
+      "tools": [
+        "LLM",
+        "shell"
+      ],
+      "role": "General",
+      "updated_at": "2025-10-28T09:00:58.572490",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission jumpjump: Strategist lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=6, verified=0, commands=0, tools=[LLM, env]\u3002\u7ecf\u9a8c\uff1a\u5df2\u4ea7\u51fa\u8bc1\u636e\u4f46\u95ed\u73af\u4e0d\u8db3\uff0c\u540e\u7eed\u5728\u6bcf\u4e00\u6b65\u524d\u660e\u786e\u5b9a\u4e49\u9a8c\u8bc1\u65b9\u5f0f\u4e0e\u5750\u6807\u3002",
+      "tools": [
+        "LLM",
+        "brew",
+        "env",
+        "shell"
+      ],
+      "role": "Strategist",
+      "updated_at": "2025-10-28T09:13:47.525920",
+      "uses": 122
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission jumpjump: Detective lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=13, verified=0, commands=11, tools=[LLM, binwalk, file, llvm-readobj, r2agf, r2info, r2main, r2xrefs, rabin2, rabin2z, radare2, strings, zip]\u3002\u7ecf\u9a8c\uff1a\u5df2\u4ea7\u51fa\u8bc1\u636e\u4f46\u95ed\u73af\u4e0d\u8db3\uff0c\u540e\u7eed\u5728\u6bcf\u4e00\u6b65\u524d\u660e\u786e\u5b9a\u4e49\u9a8c\u8bc1\u65b9\u5f0f\u4e0e\u5750\u6807\u3002",
+      "tools": [
+        "LLM",
+        "binwalk",
+        "file",
+        "llvm-readobj",
+        "r2agf",
+        "r2info",
+        "r2main",
+        "r2xrefs"
+      ],
+      "role": "Detective",
+      "updated_at": "2025-10-28T09:00:58.572442",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission jumpjump: MissionController lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=0, verified=0, commands=0, tools=[]\u3002\u7ecf\u9a8c\uff1a\u4ea7\u51fa\u504f\u5c11\uff0c\u9700\u63d0\u9ad8\u884c\u52a8\u5bc6\u5ea6\u5e76\u786e\u4fdd\u6bcf\u4e00\u6b65\u6709\u53ef\u843d\u76d8\u7684\u8bc1\u636e\u3002",
+      "tools": [],
+      "role": "MissionController",
+      "updated_at": "2025-10-28T09:00:58.572413",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "strings scan",
+      "takeaway": "1a7b AVAUATUSL 250d ([]A\\A]A^A_ 2520 AWAVAUATUSH 26f5 []A\\A]A^A_ 3ab4 AWAVAUATUSH 3d1f 8[]A\\A]A^A_ 3e39 []A\\A]A^A_ 42d8 AWAVAUATI 44e4 [A\\A]A^A_] 4d08 AWAVAUATSH 504b [A\\A]A^A_] 56",
+      "tools": [
+        "strings"
+      ],
+      "role": "Detective",
+      "updated_at": "2025-10-28T09:00:58.572387",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Detect xor-table",
+      "takeaway": "When small ints table present, try xor/add combos",
+      "tools": [
+        "python"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931961",
+      "uses": 295
+    },
+    {
+      "category": "Reverse",
+      "pattern": "XOR with constant followed by table comparison",
+      "takeaway": "If binary xors input with constant and compares against numeric table, recover flag by inverting operations.",
+      "tools": [
+        "python",
+        "radare2"
+      ],
+      "role": "",
+      "updated_at": "2025-10-28T09:22:07.931959",
+      "uses": 420
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission jumpjump: SymExecExecutorAgent lessons",
+      "takeaway": "Focus on producing verifiable artifacts with coordinates and hashes.",
+      "tools": [
+        "angr"
+      ],
+      "role": "SymExecExecutorAgent",
+      "updated_at": "2025-10-28T09:00:58.572315",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Baseline ELF sanity check: verify architecture, static linking, NX, PIE, RELRO, canary, and build-id using radare2/rabin2; establish stable base\u2026",
+      "takeaway": "Reverse step plan: Baseline ELF sanity check: verify architecture, static linking, NX, PIE, RELRO, canary, and build-id using radare2/rabin2; establish stable base address for anal",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931998",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Binary introspection (rabin2 -I)",
+      "takeaway": "arch x86 baddr 0x400000 binsz 25068 bintype elf bits 64 canary false injprot false class ELF64 compiler GCC: (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0 clang version",
+      "tools": [
+        "rabin2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.939939",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Strings sample",
+      "takeaway": "2a8 /lib64/ld-linux-x86-64.so.2 581 libstdc++.so.6 590 __gmon_start__ 59f _ZSt20__throw_length_errorPKc 5bd __cxa_guard_acquire 5d1 _ZSt3cin 5da _ZNSt7__cxx1112basic_stringIcSt11ch",
+      "tools": [
+        "strings"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.940079",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Function list (r2 aa;afl)",
+      "takeaway": "0x00401050 1 6 sym.imp.strlen 0x00401070 1 6 sym.imp.__cxa_guard_release 0x00401090 1 6 sym.imp.memcpy 0x004010a0 1 6 sy",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.940222",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "CFG summary @ 0x40189d",
+      "takeaway": "blocks=49, ops=354, cmps=26",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.940652",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x40189d",
+      "takeaway": "\u2502 0x0040189d 84c0 test al,\u001b[38;2;",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.940793",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "CFG summary @ 0x40191e",
+      "takeaway": "blocks=49, ops=354, cmps=26",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.942157",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x40191e",
+      "takeaway": "\u2502 0x0040191e 000f add byte [\u001b[38;2",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.942282",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "CFG summary @ 0x4018e0",
+      "takeaway": "blocks=49, ops=354, cmps=26",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.942533",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x4018e0",
+      "takeaway": "\u2502 0x004018e0 0000 add byte [\u001b[38;2;",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.942669",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Compare points @ 0x4018e0",
+      "takeaway": "26 cmp/test sites extracted",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.942406",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "CFG summary @ 0x4029b0",
+      "takeaway": "blocks=0, ops=0, cmps=0",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.941755",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x4029b0",
+      "takeaway": "0x004029b0 88b002000066 m",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.941881",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Static-flow rule (CFG + tables + length)",
+      "takeaway": "rule skeleton; input_len=None",
+      "tools": [
+        "planning"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.942797",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Planned debugger script (gdb)",
+      "takeaway": "# GDB planned script (do not execute automatically); set pagination off; set disassembly-flavor intel; break main",
+      "tools": [
+        "planning"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.943101",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Planned debugger script (lldb)",
+      "takeaway": "# LLDB planned script (do not execute automatically); settings set stop-line-count-before 5; settings set stop-line-count-after 5; breakpoint set --name main",
+      "tools": [
+        "planning"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.943229",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Table coordinates @ 0x004cc100",
+      "takeaway": "36 dwords at vaddr 0x004cc100 (section=unknown)",
+      "tools": [
+        "hex",
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.943471",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Hex neighborhood @ 0x004cc100",
+      "takeaway": "- offset - 0 1 2 3 4 5 6 7 8 9 A B C D E F 0123456789ABCDEF 0x004cc100 ffff ffff ffff ffff ffff ffff ffff ffff ................ 0x004cc110 ffff ffff ffff ffff ffff fff",
+      "tools": [
+        "hex",
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.943612",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Map sections and entry/entry0: list sections, confirm .text region and locate main via __libc_start_main xref; contingency: stripped binary\u2014use\u2026",
+      "takeaway": "Reverse step plan: Map sections and entry/entry0: list sections, confirm .text region and locate main via __libc_start_main xref; contingency: stripped binary\u2014use radare2 analysis",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931984",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Xrefs to strcmp/memcmp",
+      "takeaway": "; DATA XREF from entry0 @ 0x401721(r) \u250c 240: int main (int argc,",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931982",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x004018e0",
+      "takeaway": "[]",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931980",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x004018e1",
+      "takeaway": "; CALL XREF from main @ 0x401a15(x) 0x0040191e 55",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931980",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x004018e4",
+      "takeaway": "[{\"name\":\"fcn.004029b0\",\"offset\":4204976,\"ninstr\":789,\"nargs\":7,\"nlocals\":52,\"size\":4107,\"stack\":536,\"type\":\"fcn\",\"blocks\":[{\"offset\":4204976,\"size\":80,\"jump\":4205056,\"ops\":[{\"offs",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931979",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: String reconnaissance: enumerate all strings (including non-printables) and search for flag markers; attempt rabin2 -zz, r2 iz, and / in\u2026",
+      "takeaway": "Reverse step plan: String reconnaissance: enumerate all strings (including non-printables) and search for flag markers; attempt rabin2 -zz, r2 iz, and / in disassembly for 'd3ctf'",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931975",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x004029b0",
+      "takeaway": "; DATA XREF from entry0 @ 0x401721(r) \u250c 240: int main (int argc,",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931977",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x0040197c",
+      "takeaway": "[]",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931978",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Identify input handling and I/O sinks: locate read/scanf/gets equivalents or direct syscalls (read, write) in static binary via xrefs and call\u2026",
+      "takeaway": "Reverse step plan: Identify input handling and I/O sinks: locate read/scanf/gets equivalents or direct syscalls (read, write) in static binary via xrefs and call patterns; continge",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931974",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Characterize control-flow obfuscation: detect indirect jmps/jump tables/computed gotos consistent with 'jumpjump' theme; use radare2 to find jmp\u2026",
+      "takeaway": "Reverse step plan: Characterize control-flow obfuscation: detect indirect jmps/jump tables/computed gotos consistent with 'jumpjump' theme; use radare2 to find jmp [rip+...] and sw",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931976",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Extract jump tables/state machine: dump table memory (px @ addr), reconstruct edges to build a graph (nodes=basic blocks, edges=jump targets);\u2026",
+      "takeaway": "Reverse step plan: Extract jump tables/state machine: dump table memory (px @ addr), reconstruct edges to build a graph (nodes=basic blocks, edges=jump targets); contingency: if ad",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931973",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Locate success condition: find terminal block that prints or verifies success (memcmp against hidden flag, final write call, or exit code path);\u2026",
+      "takeaway": "Reverse step plan: Locate success condition: find terminal block that prints or verifies success (memcmp against hidden flag, final write call, or exit code path); search for compa",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931974",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Derive constraints per branch: annotate each decision in the maze (e.g., cmp/test conditions) and infer input bytes or numeric constraints;\u2026",
+      "takeaway": "Reverse step plan: Derive constraints per branch: annotate each decision in the maze (e.g., cmp/test conditions) and infer input bytes or numeric constraints; contingency: heavy co",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931972",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Automate solving: encode constraints into a solver (z3) or backtracking search across jump decisions; contingency: if z3-solver not installed,\u2026",
+      "takeaway": "Reverse step plan: Automate solving: encode constraints into a solver (z3) or backtracking search across jump decisions; contingency: if z3-solver not installed, implement DFS with",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931970",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Optional emulation: attempt ESIL-based emulation in radare2 to validate path and constraints without native execution (qemu-x86_64 unavailable);\u2026",
+      "takeaway": "Reverse step plan: Optional emulation: attempt ESIL-based emulation in radare2 to validate path and constraints without native execution (qemu-x86_64 unavailable); contingency: if",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931969",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Scan .rodata and data regions for embedded constants/flag bytes: use radare2 (iS; px/ps @ .rodata) to locate contiguous printable sequences or\u2026",
+      "takeaway": "Reverse step plan: Scan .rodata and data regions for embedded constants/flag bytes: use radare2 (iS; px/ps @ .rodata) to locate contiguous printable sequences or per-byte transform",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931971",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Assemble final flag: integrate solver output and any constants to produce final string; ensure format and braces; cross-check against success\u2026",
+      "takeaway": "Reverse step plan: Assemble final flag: integrate solver output and any constants to produce final string; ensure format and braces; cross-check against success block length/valida",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931966",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Final verification and report: document reasoning themes (jump maze/computed gotos), chosen attack path, contingencies taken, and validation\u2026",
+      "takeaway": "Reverse step plan: Final verification and report: document reasoning themes (jump maze/computed gotos), chosen attack path, contingencies taken, and validation evidence; prepare su",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931967",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x401721",
+      "takeaway": "[]",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931968",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Disassembly neighborhood @ 0x10",
+      "takeaway": "; CALL XREF from main @ 0x4019cc(x) 0x0040189d 55",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:07.931965",
+      "uses": 88
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Triage and fix target path mismatch; set working coordinate to /Users/qiu/Desktop/CTF/code/2; ensure neighborhood listing and the target file\u2026",
+      "takeaway": "Reverse step plan: Triage and fix target path mismatch; set working coordinate to /Users/qiu/Desktop/CTF/code/2; ensure neighborhood listing and the target file ancient exists; est",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.845308",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Compare points @ 0x40189d",
+      "takeaway": "26 cmp/test sites extracted",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.940496",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Compare points @ 0x40191e",
+      "takeaway": "26 cmp/test sites extracted",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.942019",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Data-flow slice rule @ 0x40191e",
+      "takeaway": "Derived 2 ops on eax near 0x40191e.",
+      "tools": [
+        "r2"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.942949",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Confirm binary format and architecture using macOS-compatible tooling; verify it is ELF64 x86_64 and cannot be executed natively on macOS; plan\u2026",
+      "takeaway": "Reverse step plan: Confirm binary format and architecture using macOS-compatible tooling; verify it is ELF64 x86_64 and cannot be executed natively on macOS; plan for static analys",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.862679",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Derive base address (baddr) from PT_LOAD program headers instead of assuming 0x400000; record alignment and image base for r2.",
+      "takeaway": "Reverse step plan: Derive base address (baddr) from PT_LOAD program headers instead of assuming 0x400000; record alignment and image base for r2.. Available tools: r2, ghidra, stri",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.873104",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Enumerate sections and symbols to locate candidate data regions (e.g., .rodata) where an \"ancient string\" or digit sequences may reside.",
+      "takeaway": "Reverse step plan: Enumerate sections and symbols to locate candidate data regions (e.g., .rodata) where an \"ancient string\" or digit sequences may reside.. Available tools: r2, gh",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.882221",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Run strings scans focused on numeric patterns that suggest octal sequences (digits 0-7, comma/space separated) mentioned by the DOCX hint.",
+      "takeaway": "Reverse step plan: Run strings scans focused on numeric patterns that suggest octal sequences (digits 0-7, comma/space separated) mentioned by the DOCX hint.. Available tools: r2,",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.890525",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Disassemble entry and main paths quickly to understand control flow and references to potential decoder routines.",
+      "takeaway": "Reverse step plan: Disassemble entry and main paths quickly to understand control flow and references to potential decoder routines.. Available tools: r2, ghidra, strings, otool, l",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.897215",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Deep analysis using radare2: set proper baddr from PT_LOAD, analyze functions/strings/xrefs, and graph main and suspected decode functions.",
+      "takeaway": "Reverse step plan: Deep analysis using radare2: set proper baddr from PT_LOAD, analyze functions/strings/xrefs, and graph main and suspected decode functions.. Available tools: r2,",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.903378",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Locate and characterize the decoding logic: search for base-8 conversions (strtol(..., base=8) or manual accumulation c-'0' with base 8), and map\u2026",
+      "takeaway": "Reverse step plan: Locate and characterize the decoding logic: search for base-8 conversions (strtol(..., base=8) or manual accumulation c-'0' with base 8), and map data sources to",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.909805",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Construct a Python decoding harness to try multiple hypotheses: octal -> ASCII, comma-separated octal tokens, contiguous 3-digit octal groups,\u2026",
+      "takeaway": "Reverse step plan: Construct a Python decoding harness to try multiple hypotheses: octal -> ASCII, comma-separated octal tokens, contiguous 3-digit octal groups, and fallbacks to b",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.915239",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: If no clear decoder is found, re-run binwalk on the correct target to detect embedded data or compression; carve and test decoded outputs.",
+      "takeaway": "Reverse step plan: If no clear decoder is found, re-run binwalk on the correct target to detect embedded data or compression; carve and test decoded outputs.. Available tools: r2,",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.925202",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Optional symbolic execution path (contingency): if angr is available, model input bytes and drive to success print or flag check; use CFG to\u2026",
+      "takeaway": "Reverse step plan: Optional symbolic execution path (contingency): if angr is available, model input bytes and drive to success print or flag check; use CFG to reach success path..",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.929761",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Normalize r2 base address and mapping: set bin.baddr to derived PT_LOAD base and verify section count (expect ~27 per ev-010) to avoid misaligned\u2026",
+      "takeaway": "Reverse step plan: Normalize r2 base address and mapping: set bin.baddr to derived PT_LOAD base and verify section count (expect ~27 per ev-010) to avoid misaligned analysis.. Avai",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.934655",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Reverse step: Document contingencies and fallbacks: if numeric strings absent, pivot to locating format strings or hardcoded flag in .rodata; if decoding\u2026",
+      "takeaway": "Reverse step plan: Document contingencies and fallbacks: if numeric strings absent, pivot to locating format strings or hardcoded flag in .rodata; if decoding fails, brute-try pars",
+      "tools": [
+        "LLM"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.939765",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission ancient: Detective lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=13, verified=0, commands=11, tools=[LLM, binwalk, file, llvm-readobj, r2agf, r2info, r2main, r2xrefs, rabin2, rabin2z, radare2, strings, zip]\u3002\u7ecf\u9a8c\uff1a\u5df2\u4ea7\u51fa\u8bc1\u636e\u4f46\u95ed\u73af\u4e0d\u8db3\uff0c\u540e\u7eed\u5728\u6bcf\u4e00\u6b65\u524d\u660e\u786e\u5b9a\u4e49\u9a8c\u8bc1\u65b9\u5f0f\u4e0e\u5750\u6807\u3002",
+      "tools": [
+        "LLM",
+        "binwalk",
+        "file",
+        "llvm-readobj",
+        "r2agf",
+        "r2info",
+        "r2main",
+        "r2xrefs"
+      ],
+      "role": "Detective",
+      "updated_at": "2025-10-28T09:22:25.944049",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission ancient: Strategist lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=6, verified=0, commands=0, tools=[LLM, env]\u3002\u7ecf\u9a8c\uff1a\u5df2\u4ea7\u51fa\u8bc1\u636e\u4f46\u95ed\u73af\u4e0d\u8db3\uff0c\u540e\u7eed\u5728\u6bcf\u4e00\u6b65\u524d\u660e\u786e\u5b9a\u4e49\u9a8c\u8bc1\u65b9\u5f0f\u4e0e\u5750\u6807\u3002",
+      "tools": [
+        "LLM",
+        "env"
+      ],
+      "role": "Strategist",
+      "updated_at": "2025-10-28T09:22:25.944341",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission ancient: General lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=3, verified=0, commands=0, tools=[LLM]\u3002\u7ecf\u9a8c\uff1a\u5df2\u4ea7\u51fa\u8bc1\u636e\u4f46\u95ed\u73af\u4e0d\u8db3\uff0c\u540e\u7eed\u5728\u6bcf\u4e00\u6b65\u524d\u660e\u786e\u5b9a\u4e49\u9a8c\u8bc1\u65b9\u5f0f\u4e0e\u5750\u6807\u3002",
+      "tools": [
+        "LLM"
+      ],
+      "role": "General",
+      "updated_at": "2025-10-28T09:22:25.944652",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission ancient: ReverseExecutorAgent lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=435, verified=420, commands=392, tools=[LLM, env, planning, python, r2, rabin2, strings]\u3002\u7ecf\u9a8c\uff1a\u672c\u8f6e\u95ed\u73af\u6210\u529f\uff0c\u4f18\u5148\u590d\u7528\u9ad8\u4ea7\u51fa\u5de5\u5177\u4e0e\u65b9\u6cd5\uff1b\u540e\u7eed\u63d0\u5347\u590d\u6742\u573a\u666f\u5904\u7406\u80fd\u529b\u3002",
+      "tools": [
+        "LLM",
+        "env",
+        "planning",
+        "python",
+        "r2",
+        "rabin2",
+        "strings"
+      ],
+      "role": "ReverseExecutorAgent",
+      "updated_at": "2025-10-28T09:22:25.944966",
+      "uses": 0
+    },
+    {
+      "category": "Reverse",
+      "pattern": "Mission ancient: Validator lessons",
+      "takeaway": "\u81ea\u8bc4\uff1aevidence=0, verified=0, commands=0, tools=[]\u3002\u7ecf\u9a8c\uff1a\u4ea7\u51fa\u504f\u5c11\uff0c\u9700\u63d0\u9ad8\u884c\u52a8\u5bc6\u5ea6\u5e76\u786e\u4fdd\u6bcf\u4e00\u6b65\u6709\u53ef\u843d\u76d8\u7684\u8bc1\u636e\u3002",
+      "tools": [],
+      "role": "Validator",
+      "updated_at": "2025-10-28T09:22:25.945290",
+      "uses": 0
+    }
+  ],
+  "scores": {
+    "MissionController": {
+      "Reverse": {
+        "ema": 0.708,
+        "count": 6,
+        "last_score": 67,
+        "updated_at": "2025-10-26T02:14:16.493393"
+      }
+    },
+    "Detective": {
+      "Reverse": {
+        "ema": 0.839,
+        "count": 46,
+        "last_score": 81,
+        "updated_at": "2025-10-28T09:22:25.943906"
+      }
+    },
+    "Strategist": {
+      "Reverse": {
+        "ema": 0.691,
+        "count": 46,
+        "last_score": 69,
+        "updated_at": "2025-10-28T09:22:25.944214"
+      }
+    },
+    "General": {
+      "Reverse": {
+        "ema": 0.691,
+        "count": 46,
+        "last_score": 69,
+        "updated_at": "2025-10-28T09:22:25.944510"
+      }
+    },
+    "ReverseExecutorAgent": {
+      "Reverse": {
+        "ema": 0.862,
+        "count": 46,
+        "last_score": 90,
+        "updated_at": "2025-10-28T09:22:25.944809"
+      }
+    },
+    "Validator": {
+      "Reverse": {
+        "ema": 0.691,
+        "count": 46,
+        "last_score": 69,
+        "updated_at": "2025-10-28T09:22:25.945149"
+      }
+    }
+  },
+  "tool_stats": {
+    "Detective": {
+      "file": {
+        "success": 58,
+        "fail": 0,
+        "last_used": "2025-10-28T09:01:00.248724"
+      },
+      "binwalk": {
+        "success": 6,
+        "fail": 52,
+        "last_used": "2025-10-28T09:01:00.581879"
+      },
+      "strings": {
+        "success": 6,
+        "fail": 51,
+        "last_used": "2025-10-28T09:01:00.915326"
+      },
+      "r2": {
+        "success": 241,
+        "fail": 9,
+        "last_used": "2025-10-28T09:01:03.398408"
+      },
+      "rabin2": {
+        "success": 64,
+        "fail": 55,
+        "last_used": "2025-10-28T09:01:02.399432"
+      },
+      "otool": {
+        "success": 4,
+        "fail": 1,
+        "last_used": "2025-10-28T08:50:24.483148"
+      },
+      "llvm-readobj": {
+        "success": 10,
+        "fail": 0,
+        "last_used": "2025-10-28T09:01:03.748475"
+      }
+    },
+    "Strategist": {
+      "brew": {
+        "success": 6,
+        "fail": 1,
+        "last_used": "2025-10-26T02:23:36.048380"
+      }
+    },
+    "ReverseExecutorAgent": {
+      "rabin2": {
+        "success": 213,
+        "fail": 2,
+        "last_used": "2025-10-28T09:22:08.246492"
+      },
+      "strings": {
+        "success": 190,
+        "fail": 25,
+        "last_used": "2025-10-28T09:22:08.578364"
+      },
+      "r2": {
+        "success": 3603,
+        "fail": 16,
+        "last_used": "2025-10-28T09:22:15.857240"
+      },
+      "otool": {
+        "success": 128,
+        "fail": 1,
+        "last_used": "2025-10-28T09:22:07.931419"
+      },
+      "llvm-readobj": {
+        "success": 60,
+        "fail": 0,
+        "last_used": "2025-10-28T09:22:07.604550"
+      },
+      "llvm-objdump": {
+        "success": 65,
+        "fail": 0,
+        "last_used": "2025-10-28T09:22:07.258492"
+      }
+    },
+    "General": {
+      "brew": {
+        "success": 4,
+        "fail": 0,
+        "last_used": "2025-10-26T09:08:27.321914"
+      }
+    },
+    "Installer": {
+      "otool": {
+        "success": 186,
+        "fail": 5,
+        "last_used": "2025-10-28T09:18:33.350742"
+      },
+      "objdump": {
+        "success": 188,
+        "fail": 3,
+        "last_used": "2025-10-28T09:18:34.298425"
+      },
+      "r2": {
+        "success": 166,
+        "fail": 2,
+        "last_used": "2025-10-28T09:18:34.608904"
+      },
+      "rabin2": {
+        "success": 166,
+        "fail": 2,
+        "last_used": "2025-10-28T09:18:34.925456"
+      },
+      "strings": {
+        "success": 166,
+        "fail": 2,
+        "last_used": "2025-10-28T09:18:35.244906"
+      },
+      "python": {
+        "success": 15,
+        "fail": 0,
+        "last_used": "2025-10-28T09:18:32.996364"
+      },
+      "brew": {
+        "success": 38,
+        "fail": 13,
+        "last_used": "2025-10-27T12:26:26.035096"
+      },
+      "llvm-objdump": {
+        "success": 64,
+        "fail": 0,
+        "last_used": "2025-10-28T09:18:33.670637"
+      },
+      "llvm-readobj": {
+        "success": 64,
+        "fail": 0,
+        "last_used": "2025-10-28T09:18:33.987037"
+      }
+    }
+  }
+}
